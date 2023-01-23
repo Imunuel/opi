@@ -12,6 +12,7 @@ def total_value_of_operation():
             total += line[4]
         else:
             return "Данные введены не корректны"
+    print(total)
     return total
 
 
@@ -21,3 +22,7 @@ def test_unit():
     assert value > 0, "Расходы превысили вашу зарплату"
     assert value < 996.74, "Вы не тратите деньги?"
     assert value == 871.07, "Я точно знаю сколько должно остаться на счету..."
+
+
+if __name__ == "__main__":
+    total_value_of_operation()
